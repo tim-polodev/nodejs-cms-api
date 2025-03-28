@@ -1,0 +1,41 @@
+{
+  "name": "cms-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "debug": "node --inspect index.js",
+    "create_migration": "npx sequelize-cli migration:generate --name",
+    "prod_db_migrate": "npx sequelize-cli db:migrate --env production",
+    "dev_db_migrate": "npx sequelize-cli db:migrate --env development"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.5.0",
+    "lodash": "^4.17.21",
+    "minio": "^8.0.1",
+    "moment": "^2.30.1",
+    "multer": "^1.4.5-lts.1",
+    "node-cache": "^5.1.2",
+    "node-cron": "^3.0.3",
+    "node-fetch": "^3.3.2",
+    "pg": "^8.11.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.35.2",
+    "yup": "^1.4.0"
+  },
+  "devDependencies": {
+    "babel-register": "^6.26.0",
+    "sequelize-cli": "^6.6.2"
+  }
+}
